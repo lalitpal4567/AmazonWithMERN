@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.whole-discription{
+    width: 390px;
+    padding: 5px 10px;
+}
+.item-details{
+    font-size: 22px;
+    font-weight: 500;
+}

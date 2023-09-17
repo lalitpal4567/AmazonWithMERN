@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.card-containers1{
+    text-decoration: none;
+}
+.card-containers1:hover{
+    cursor: pointer;
+}
+.card1{
+    width: 238px;
+}
+.item-image1{
+    width: 180px;
+    display: block;
+    margin: auto;
+}
+.img-container1{
+    width: 100%;
+    padding: 5px 0px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(239, 239, 239);
+}
+.item-details1{
+    padding: 7px 0px;
+}
+.item-offer1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 5px;
+}
+.offer1{
+    padding: 3px 7px;
+    background-color: #CC0C39;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+
+}
+.today-deal1{
+    font-size: 12px;
+    font-weight: 700;
+    color: #CC0C39;
+}
+.item-price1{
+    padding: 5px 0px;
+}
+.item-price1 p{
+    font-size: 18px;
+    font-weight: 500;
+}

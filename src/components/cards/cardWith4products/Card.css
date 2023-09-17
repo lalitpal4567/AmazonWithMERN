@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.card-container{
+    padding: 15px 20px;
+    width: 290px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+}
+.card-container a{
+    text-decoration: none;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.cards a{
+    color: black;
+    /* display: block; */
+    /* width: 117px; */
+    /* overflow: hidden; */
+    
+}
+.cards img{
+    width: 119px;
+    /* width: 164px; */
+    height: 102px;   
+    /* margin: auto auto; */
+}
+.item-offers{
+    color: dodgerblue;
+    font-size: 12px;
+    font-weight: 500;
+}

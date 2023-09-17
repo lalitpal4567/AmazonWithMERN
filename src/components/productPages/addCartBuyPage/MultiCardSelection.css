@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.img-views{
+    width: 545px;    
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    column-gap: 10px;
+}
+.img-box{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 5px 1px;
+}
+.img-box:hover{
+    outline: 3px solid rgb(163, 229, 255);
+}
+.img-box img{
+    width: 40px;
+    display: block;
+    margin: auto auto;
+
+}
+.img-selection{
+    display: inline-grid;
+    grid-template-rows: repeat(5, 60px);
+    row-gap: 9px;
+}
+.selected-img{
+    width: 490px;
+    display: block;
+    margin: auto;
+}
