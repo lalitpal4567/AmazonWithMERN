@@ -1,0 +1,38 @@
+.carousel-container {
+    position: relative;
+    height: 500px;
+  }
+  
+  .carousel-slide {
+    opacity: 0;
+    position: relative;
+    transition: opacity 0.5s;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-slide img {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .arrowBtn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem;
+  }
+  .leftBtn{
+    top: 120px;
+    left: 20px;
+  }
+  .rightBtn{
+    top: 120px;
+    right: 20px;
+  }
+  

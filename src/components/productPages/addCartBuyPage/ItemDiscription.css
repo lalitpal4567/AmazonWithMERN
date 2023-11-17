@@ -1,13 +1,22 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-.whole-discription{
+.main-container-product-discription{
     width: 390px;
     padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
-.item-details{
+.item-main-heading{
     font-size: 22px;
     font-weight: 500;
+}
+.discription-about-item ul li{
+    font-size: 14px;
+    font-weight: 500;
+}
+.current-price-item-discription{
+    font-size: 30px;
+    font-weight: 500;
+}
+.current-price-item-discription span{
+    font-size: 22px;
 }

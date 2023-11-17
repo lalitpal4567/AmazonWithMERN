@@ -6,10 +6,12 @@ const LowestNavBar = () => {
         <section>
             <header className='product-categories'>
                 <ul className='categories'>
-                    <li>Electronics</li>
-                    <li>Buds & Phones</li>
-                    <li>Kitchen & Home appliances</li>
-                    <li>Clothes & Fashion</li>
+                    <li className='child1'>Electronics</li>
+                    <li className='child2'>Buds & Watches</li>
+                    <li className='child3'>Phones & Laptops</li>
+                    <li className='child4'>Kitchen & Home appliances</li>
+                    <li className='child5'>Kitchen & Home accessories</li>
+                    <li className='child6'>Clothes & Fashion</li>
                 </ul>
             </header>
         </section>

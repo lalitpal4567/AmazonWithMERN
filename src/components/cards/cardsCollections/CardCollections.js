@@ -1,18 +1,18 @@
 import React from 'react'
 import "./CardCollections.css";
-import product from "../../../product_data/HomePageData";
-import Card from '../cardWith4products/Card';
-import CardWith1ItemOnly from '../cardWith1ItemWithoutInfo/CardWith1ItemOnly';
+import Card4Advertisement from '../cardWith4products/Card4Advertisement';
+import Card1Advertisement from '../cardWith1ItemWithoutInfo/Card1Advertisement';
+import advertisement from 'src/product_data/HomePageData';
 
 const CardCollections = () => {
     return (
         <div className='cards-collection'>
-            {product.map((obj) => {
-                return <Card propss={obj} />
+            { advertisement.map((obj) =>{
+                return <Card4Advertisement propss={obj}/>
             })}
-            <CardWith1ItemOnly/>
-            <CardWith1ItemOnly/>
-            <CardWith1ItemOnly/>
+            <Card1Advertisement/>
+            <Card1Advertisement/>
+            <Card1Advertisement/>
         </div>
     )
 }

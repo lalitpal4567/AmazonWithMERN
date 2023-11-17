@@ -1,0 +1,157 @@
+{
+  "categories": [
+    {
+      "id": "electronics",
+      "categoryName": "Electronics",
+      "subcategories": [
+        {
+          "id": "phone",
+          "subcategoryName": "phone",
+          "products": [
+            {
+              "id": 100,
+              "productName": "Oppo A78",
+              "brand": "Oppo",
+              "ModelName": "A78",
+              "os": "Android 13.0",
+              "manufacturer": "OPPO MOBILES INDIA PVT",
+              "images": {
+                "imgUrl1": "/images/mobilesImages/oppo/oppo_A78/oPPO_A78_Aqua_Green.png",
+                "imgUrl2": "/images/mobilesImages/oppo/oppo_A78/oPPO_A78_Aqua_Green_img1.jpg",
+                "imgUrl3": "/images/mobilesImages/oppo/oppo_A78/oPPO_A78_Aqua_Green_img2.jpg",
+                "imgUrl4": "/images/mobilesImages/oppo/oppo_A78/oPPO_A78_Aqua_Green_img3.jpg",
+                "imgUrl5": "/images/mobilesImages/oppo/oppo_A78/oPPO_A78_Aqua_Green_img4.jpg",
+                "imgUrl6": "/images/mobilesImages/oppo/oppo_A78/oPPO_A78_Aqua_Green_img5.jpg"
+              },
+              "discription": "OPPO A78 (Aqua Green, 8GB RAM, 128GB Storage) | 6.4 inch FHD+ AMOLED 90Hz Punch Hole Display | 5000 mAh Battery and 67W SUPERVOOC with No Cost EMI/Additional Exchange Offers",
+              "about": [
+                "6.4 inch FHD+ AMOLED 90Hz Punch Hole Display with 2400x1080 pixels & In-Display Fingerprint Sensor",
+                "Big 5000 mAh Battery with 67W SUPERVOOC Charging",
+                "Memory, Storage & SIM: 8 GB RAM (+ RAM expansion up to 8GB) | 128 GB ROM | Expandable Upto 1TB | Dual SIM Slot",
+                "Dual Camera Setup: 50MP Main Camera (f/1.8 Aperture, FOV: 77 Degree, 5P Lens, Auto Focus",
+                "8MP Front Camera: (f/2.0 Aperture, FOV: 83 Degree, 4P Lens), "
+              ],
+              "colour": [
+                "Aqua Green"
+              ],
+              "stars": 3.8,
+              "reviews": 202,
+              "price": 17499
+            },
+            {
+              "id": 112,
+              "productName": "Oppo A17k",
+              "brand": "Oppo",
+              "ModelName": "A17k",
+              "os": "Android 12.0",
+              "manufacturer": "OPPO MOBILES INDIA PVT",
+              "images": {
+                "imgUrl1": "/images/mobilesImages/oppo/oppo_A17k/oppo_A17K.png",
+                "imgUrl2": "/images/mobilesImages/oppo/oppo_A17k/oppo_A17K_img1.jpg",
+                "imgUrl3": "/images/mobilesImages/oppo/oppo_A17k/oppo_A17K_img2.jpg",
+                "imgUrl4": "/images/mobilesImages/oppo/oppo_A17k/oppo_A17K_img3.jpg",
+                "imgUrl5": "/images/mobilesImages/oppo/oppo_A17k/oppo_A17K_img4.jpg",
+                "imgUrl6": "/images/mobilesImages/oppo/oppo_A17k/oppo_A17K_img5.jpg"
+              },
+              "discription": "Oppo A17k (Blue, 3GB RAM, 64GB Storage) with No Cost EMI/Additional Exchange Offers",
+              "about": [
+                "6.56 inch (16.66cm) HD+ Waterdrop Colour Rich Display with 1612x720 pixels | IPX4 Water Resistant | Side Fingerprint Sensor",
+                "3 GB RAM (Up to 4GB Extended RAM)| 64 GB ROM | Dual Sim Slot + Micro SD with MediaTek P35 processor and long lasting 5000 mAh Battery",
+                "5MP Front Camera | 8MP Rear Camera"
+              ],
+              "colour": [
+                "Blue"
+              ],
+              "stars": 4,
+              "reviews": 381,
+              "price": 8999
+            }
+          ]
+        },
+        {
+          "id": "earphones",
+          "subcategoryName": "earbuds",
+          "products": [
+            {
+              "id": 101,
+              "productName": "Oneplus Buds Z2",
+              "brand": "Oneplus",
+              "ModelName": "BudsZ2",
+              "images": {
+                "imgUrl1": "/images/ipodImages/onePlus/budsZ2/onePlus_Buds_Z2.png",
+                "imgUrl2": "/images/ipodImages/onePlus/budsZ2/onePlus_Buds_Z2_img1.jpg",
+                "imgUrl3": "/images/ipodImages/onePlus/budsZ2/onePlus_Buds_Z2_img2.jpg",
+                "imgUrl4": "/images/ipodImages/onePlus/budsZ2/onePlus_Buds_Z2_img3.jpg",
+                "imgUrl5": "/images/ipodImages/onePlus/budsZ2/onePlus_Buds_Z2_img4.jpg",
+                "imgUrl6": "/images/ipodImages/onePlus/budsZ2/onePlus_Buds_Z2_img5.jpg"
+              },
+              "discription": "OnePlus Buds Z2 Bluetooth Truly Wireless in Ear Earbuds with mic, Active Noise Cancellation, 10 Minutes Flash Charge & Upto 38 Hours Battery [Matte Black]",
+              "colour": [
+                "Matte Black"
+              ],
+              "connectivity": [
+                "Wireless",
+                "Bluetooth"
+              ],
+              "manufacturer": "OnePlus",
+              "stars": 4.5,
+              "reviews": 40,
+              "price": 4999
+            },
+            {
+              "id": 102,
+              "productName": "Oneplus NordBuds CE",
+              "brand": "Oneplus",
+              "ModelName": "Nord Buds CE",
+              "images": {
+                "imgUrl1": "/images/ipodImages/onePlus/nordBudsCE/onePlus_Nord_Buds_CE.png",
+                "imgUrl2": "/images/ipodImages/onePlus/nordBudsCE/onePlus_Nord_Buds_CE_img1.jpg",
+                "imgUrl3": "/images/ipodImages/onePlus/nordBudsCE/onePlus_Nord_Buds_CE_img2.jpg",
+                "imgUrl4": "/images/ipodImages/onePlus/nordBudsCE/onePlus_Nord_Buds_CE_img3.jpg",
+                "imgUrl5": "/images/ipodImages/onePlus/nordBudsCE/onePlus_Nord_Buds_CE_img4.jpg",
+                "imgUrl6": "/images/ipodImages/onePlus/nordBudsCE/onePlus_Nord_Buds_CE_img5.jpg"
+              },
+              "discription": "OnePlus Nord Buds CE Bluetooth Truly Wireless in Ear Earbuds.",
+              "Colour": [
+                "Moonlight White"
+              ],
+              "Connectivity": [
+                "Wireless"
+              ],
+              "Manufacturer": "OnePlus",
+              "stars": 4.2,
+              "inStock": "In stock",
+              "price": 2299
+            },
+            {
+              "id": 103,
+              "productName": "Oneplus Pro 2R",
+              "brand": "Oneplus",
+              "ModelName": "Buds Pro",
+              "images": {
+                "imgUrl1": "/images/ipodImages/onePlus/pro2R/onePlus_Buds_Pro_2R.png",
+                "imgUrl2": "/images/ipodImages/onePlus/pro2R/onePlus_Buds_Pro_2R_img1.jpg",
+                "imgUrl3": "/images/ipodImages/onePlus/pro2R/onePlus_Buds_Pro_2R_img2.jpg",
+                "imgUrl4": "/images/ipodImages/onePlus/pro2R/onePlus_Buds_Pro_2R_img3.jpg",
+                "imgUrl5": "/images/ipodImages/onePlus/pro2R/onePlus_Buds_Pro_2R_img4.jpg",
+                "imgUrl6": "/images/ipodImages/onePlus/pro2R/onePlus_Buds_Pro_2R_img5.jpg"
+              },
+              "discription": "OnePlus Nord Buds 2r True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 Rating [Deep Grey].",
+              "Colour": [
+                "Misty White"
+              ],
+              "Connectivity": [
+                "Wireless, Bluetooth"
+              ],
+              "Manufacturer": "OnePlus",
+              "stars": 3.2,
+              "inStock": "In stock",
+              "price": 9999
+            }
+          ]
+        }
+      ]
+    },
+    {}
+  ]
+}

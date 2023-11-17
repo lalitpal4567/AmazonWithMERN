@@ -1,80 +1,126 @@
-import React from 'react'
-import "../navbar/NavBar.css";
+import React, { useState } from 'react'
+import "./NavBar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RiArrowDropDownFill } from "react-icons/ri";
+import { FaRegUser } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
+const Navbar = ({onSearchChange, searchTerm}) => {
+    const [isHovering, setIsHovering] = useState(false);
+    const [isOverlayActive, setOverlayActive] = useState(false);
+    const [isSignInOptionsVisible, setSignInOptionsVisible] = useState(false);
+    const [searchIconClicked, setSearchIconClicked] = useState(false);
+    const [query, setquery] = useState("");
 
 
-const Navbar = ({toggleSideProp}) => {
+    const handleMouseOver = () => {
+        setIsHovering(true);
+        setOverlayActive(true);
+        setSignInOptionsVisible(true);
+    }
+    const handleMouseOut = () => {
+        setIsHovering(false);
+        setOverlayActive(false);
+        setSignInOptionsVisible(false);
+    }
+
+    const setSearchIcon = (event) =>{
+        // searchIconClicked(true);
+    }
+    const handleSearchChange = (event) => {
+        // Call the onSearchChange prop with the updated search term
+        onSearchChange(event.target.value);
+        // setquery(event.target.value);
+      };
+
     return (
         <>
-            <header>
-                <header className="navbar-sec">
-                    <section className="address-logo-sec">
-                        <div className="logo-sec link">
-                            <a href="#" className="logo-container">
-                                <img src="images/amazon-logo.png" className='amazon-logo' />
-                                <span className="amazon-in">.in</span>
-                            </a>
+            <header className='zxvls3-navbar-main-container'>
+                <nav className="zxvls3-navbar-sec">
+                    <section className="zxvls3-address-logo-sec">
+                        <div className="zxvls3-logo-sec zxvls3-link">
+                            <Link to="/" className="zxvls3-logo-container">
+                                <img src="/images/amazon-logo.png" className='zxvls3-amazon-logo' />
+                                <span className="zxvls3-amazon-in">.in</span>
+                            </Link>
                         </div>
-                        <div className='link'>
-                            <a href="##" className="user-address">
+                        <div className='zxvls3-link zxvls3-address-link'>
+                            <Link to="" className="zxvls3-user-address">
                                 <i class="fa-solid fa-location-dot"></i>
                                 <div>
-                                    <p className="nav-line1">Hello</p>
-                                    <p className="nav-line2">Select your address</p>
+                                    <p className="zxvls3-nav-line1">Hello</p>
+                                    <p className="zxvls3-nav-line2">Select your address</p>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </section>
 
-                    <section className="search-sec">
-                        <div className="dropdown-menu">
+                    <section className="zxvls3-search-sec">
+                        <div className="zxvls3-dropdown-menu">
                             <p>All</p>
-                            <img src="images/caret-down-solid.svg" />
+                            <img src="/images/caret-down-solid.svg" />
                         </div>
-                        <input type="text" placeholder="Search Amazon.in" className="search-input"></input>
-                        <div className="search-icon-box">
-                            <img src="images/magnifying-glass-solid.svg" className="search-icon" />
+                        <input type="text" placeholder="Search Amazon.in" className="zxvls3-search-input" onChange={handleSearchChange}></input>
+                        <div className="zxvls3-search-icon-box">
+                            <img src="/images/magnifying-glass-solid.svg" className="zxvls3-search-icon" onClick={setSearchIcon} />
                         </div>
                     </section>
 
-                    <section className="signcard-sec">
-                        <a href="###" className="language link">
-                            <span><img src="images/Flag_of_India.svg.webp"></img></span>
-                            <span><p className="nav-line2">EN</p></span>
-                            <span><img src="images/caret-down-solid.svg"></img></span>
-                        </a>
-                        <a href="####" className="account-signin link">
-                            <div>
-                                <p className="nav-line1" style={{ color: "white" }}>Hello, sign in</p>
-                                <p className="nav-line2">Account & Lists</p>
+                    <section className="zxvls3-signcard-sec">
+                        <Link to="" className="zxvls3-language zxvls3-link">
+                            <span><img src="/images/Flag_of_India.svg.webp"></img></span>
+                            <span><p className="zxvls3-nav-line2">EN</p></span>
+                            <span><RiArrowDropDownFill className='selection-dropdown' /></span>
+                        </Link>
+                        <Link to="" className="zxvls3-account-signin zxvls3-link" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                            <div >
+                                <p className="zxvls3-nav-line1 zxvls3-check-user-account" style={{ color: "white" }}>Hello, amazon</p>
+                                <p className="zxvls3-nav-line2 zxvls3-check-user-account">Account & Lists</p>
+                                <div className='zxvls3-user-account-sec'>
+                                    <p className="zxvls3-nav-line2 ">amazon</p>
+                                    <FaRegUser />
+                                </div>
                             </div>
-                            <span><img src="images/caret-down-solid.svg" /></span>
-                        </a>
-                        <div className="order-purchase link">
-                            <a href="#####">
-                                <p className="nav-line1">Returns</p>
-                                <p className="nav-line2">& Orders</p>
-                            </a>
-                        </div>
-                        <div className="shopping-cart link">
-                            <a href="######"><img src="images/shopping-cart.png" /></a>
-                            <p className="nav-line2">Cart</p>
+                            <RiArrowDropDownFill className='zxvls3-selection-dropdown' />
+                            {isSignInOptionsVisible && (
+                                <div className="zxvls3-hover-message">
+                                    <h3>Amazon</h3>
+                                    <ul>
+                                        <li>
+                                            <Link to="/signIn" className="zxvls3-hover-message-link" style={{ color: 'black'}}>
+                                                Sign In
+                                            </Link>
+                                        </li>
+                                            
+                                        <li>
+                                            <Link to="/signUp" className="zxvls3-hover-message-link" style={{ color: 'black'}}>
+                                                Sign Out
+                                            </Link>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            )}
+                        </Link>
+                        <Link to="/productCart" className="zxvls3-shopping-cart zxvls3-link">
+                            <img src="/images/shopping-cart.png" />
+                            <p className="zxvls3-nav-line2">Cart</p>
                             <h3>0</h3>
-                        </div>
+                        </Link>
                     </section>
-                </header>
+                </nav>
 
-                <header>
-                    <div className="navbar-sec2">
-                        <div id="side-bar">
-                            <GiHamburgerMenu className='hamburger-icon' onClick={()=>{toggleSideProp(true)}}/>
-                            <span className="nav-line2">All</span>
+                <nav>
+                    <div className="zxvls3-navbar-sec2">
+                        <div id="zxvls3-side-bar">
+                            <GiHamburgerMenu className='zxvls3-hamburger-icon' />
+                            <span className="zxvls3-nav-line2">All</span>
                         </div>
-                        <a className='amazon-services' href="#">Amazon miniTV</a>
-                        <a className='amazon-services' href="##">Mobiles</a>
+                        <Link to="" className='zxvls3-amazon-services' href="#">Amazon miniTV</Link>
+                        <Link to="" className='zxvls3-amazon-services' href="##">Mobiles</Link>
                     </div>
-                </header>
+                </nav>
             </header>
+            <div className={isOverlayActive ? "zxvls3-active-overlay" : "zxvls3-overlay-on-hover"}></div>
         </>
 
     )

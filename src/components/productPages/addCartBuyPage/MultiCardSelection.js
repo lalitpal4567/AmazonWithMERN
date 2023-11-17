@@ -2,16 +2,18 @@ import React, { useState } from 'react'
 import "./MultiCardSelection.css"
 
 
-const MultiCardSelection = () => {
-  const [selectedImage, setImage] = useState("images/ipodImages/ipod_bould_x1.png");
+const MultiCardSelection = ({imgProp}) => {
+  // console.log(imgProp);
+  const [selectedImage, setImage] = useState(imgProp.images.imgUrl1);
+
   return (
-    <div className='img-views'>
-        <div className='img-selection'>
-          <div className='img-box'><img src="images/ipodImages/ipod_bould_x1.png" onMouseEnter={(e)=>setImage("images/ipodImages/ipod_bould_x1.png")}/></div>
-          <div className='img-box'><img src="images/ipodImages/ipod_oppo.png" onMouseEnter={(e)=>setImage("images/ipodImages/ipod_oppo.png")}/></div>
-          <div className='img-box'><img src="images/ipodImages/ipod_oppo_air32.png" onMouseEnter={(e)=>setImage("images/ipodImages/ipod_oppo_air32.png")}/></div>
-          <div className='img-box'><img src="images/ipodImages/ipod_boult.png" onMouseEnter={(e)=>setImage("images/ipodImages/ipod_boult.png")}/></div>
-          <div className='img-box'><img src="images/ipodImages/ipod_bould_x1.png" onMouseEnter={(e)=>setImage("images/ipodImages/ipod_bould_x1.png")}/></div>
+    <div className='main-container-img-selection'>
+        <div className='inner-container-img-selection'>
+          <div className='img-box-selection'><img src={imgProp.images.imgUrl2} onMouseEnter={(e)=>setImage(imgProp.images.imgUrl2)}/></div>
+          <div className='img-box-selection'><img src={imgProp.images.imgUrl3} onMouseEnter={(e)=>setImage(imgProp.images.imgUrl3)}/></div>
+          <div className='img-box-selection'><img src={imgProp.images.imgUrl4} onMouseEnter={(e)=>setImage(imgProp.images.imgUrl4)}/></div>
+          <div className='img-box-selection'><img src={imgProp.images.imgUrl5} onMouseEnter={(e)=>setImage(imgProp.images.imgUrl5)}/></div>
+          <div className='img-box-selection'><img src={imgProp.images.imgUrl6} onMouseEnter={(e)=>setImage(imgProp.images.imgUrl6)}/></div>
         </div>
         <div className='selected-img-container'>
           <img className='selected-img' src={selectedImage}/>

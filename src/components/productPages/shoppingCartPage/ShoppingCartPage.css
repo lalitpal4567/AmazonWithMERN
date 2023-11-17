@@ -1,0 +1,27 @@
+.main-container-abc{
+    padding: 27px 20px;
+}
+.selected-product-shopping-cart{
+    background-color: white;
+    padding: 20px 20px 30px 20px;
+    width: 74.5%;
+}
+.selected-product-shopping-cart ul{
+    list-style: none;
+}
+#shopping-cart-title{
+    border-bottom: 2px solid rgb(221, 221, 221);
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.checkbox-shopping-cart input{
+    width: 18px;
+    height: 18px;
+}
+.checkbox-shopping-cart input:hover{
+    outline: 4px solid dodgerblue;
+    outline-offset: -5px;
+    cursor: pointer;
+    
+}

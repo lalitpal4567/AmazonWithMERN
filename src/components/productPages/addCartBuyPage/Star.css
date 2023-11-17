@@ -1,9 +1,11 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 .star-icon{
     color: orange;
     outline-color: orange;
+}
+.stars{
+    margin-right: 5px;
+}
+.ratings{
+    margin-left: 5px;
+    color: #007185;
 }

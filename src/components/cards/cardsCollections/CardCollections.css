@@ -1,12 +1,13 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 .cards-collection{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 20px;
+    column-gap: 20px;
     padding: 20px 0px;
+}
+@media (max-width: 400px) {
+    .cards-collection{
+        row-gap: 150px;
+    }
 }
