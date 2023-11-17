@@ -22,7 +22,8 @@ const ScrollToTop = () => {
 const App = () => {
     
     return (
-        <Router>
+        <>
+        // <Router>
             <ScrollToTop/>
             <Routes>
                 <Route path="/productPage/:labelName" element={<ProductPage />} />
@@ -33,7 +34,8 @@ const App = () => {
                 <Route path="/" element={<HomePageDashboard />} />
                 <Route path="/*" element={<ErrorPage />} />
             </Routes>
-        </Router>
+        // </Router>
+        </>
     );
 }
 export default App
