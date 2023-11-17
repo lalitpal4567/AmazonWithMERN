@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import HomePageDashboard from "./components/productPages/homePage/HomePageDashboard";
 import ProductPage from "./components/productPages/productPage/ProductPage";
 import AddCartBuyPage from "./components/productPages/addCartBuyPage/AddCartBuyPage";
